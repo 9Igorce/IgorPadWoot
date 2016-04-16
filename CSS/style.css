@@ -1,0 +1,70 @@
+#main-room #mobile-room-menu {
+  z-index: 1000 !important;
+}
+#IPW-logo {
+  z-index: 1001;
+}
+#IPW-button {
+  border-radius: 4px 0 0 4px !important;
+}
+/* styling */
+#IPW-menu {
+  float: right;
+  position: absolute;
+  top: 41px; right: 190px;
+  width: 150px;
+  text-align: center;
+  font-family: "Arial";
+  border-radius: 25px;
+  border: 1px solid hsla(0,0%,100%,0.3);
+  box-shadow: 0 4px 10px #000;
+  transition: all ease-in-out 0.25s;
+}
+#IPW-menu li {
+  width: 100%;
+  margin: 0 !important;
+  padding: 5px !important;
+  cursor: pointer;
+  font-size: 17px;
+  text-transform: none;
+  color: #aaa;
+  background: hsla(210,10%,10%,0.8);
+}
+#IPW-menu li:hover {
+  color: #fff;
+  text-shadow: 0 0 10px;
+  background: linear-gradient(hsla(210,10%,10%,0.8), hsla(210,10%,0%,0.8));
+  box-shadow: inset 0 1px 0 hsla(0,0%,100%,0.3),
+  inset 0 -1px 0 hsla(0,0%,100%,0.3);
+}
+#IPW-menu li.on {
+  color: hsl(120,80%,30%);
+}
+#IPW-menu li.off {
+  color: hsl(30,100%,30%);
+}
+#IPW-menu #kill {
+  color: hsl(0,80%,30%);
+}
+#IPW-menu li.on:hover {
+  color: hsl(120,100%,50%);
+  background: linear-gradient(hsla(120,10%,10%,0.8), hsla(120,10%,5%,0.8));
+  box-shadow-color: hsl(120,100%,50%);
+}
+#IPW-menu li.off:hover {
+  color: hsl(30,100%,50%);
+  background: linear-gradient(hsla(30,10%,10%,0.8), hsla(30,10%,5%,0.8));
+}
+#IPW-menu #kill:hover {
+  color: hsl(0,100%,50%);
+  background: linear-gradient(hsla(0,10%,10%,0.8), hsla(0,10%,5%,0.8));
+}
+#IPW-menu li:first-child:hover {
+  box-shadow: inset 0 -1px hsla(0,0%,100%,0.3);
+}
+#IPW-menu li:nth-last-child(1) {
+  border-radius: 0 0 10px 10px;
+}
+#IPW-menu li:nth-last-child(1):hover {
+  box-shadow: inset 0 1px hsla(0,0%,100%,0.3);
+}
